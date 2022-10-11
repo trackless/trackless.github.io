@@ -1,0 +1,1315 @@
+<!doctype html>
+<html style='font-size:16px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+:root {
+    --monospace: "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-block-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+}/*
+ * Copyright (C) 2018 Drake, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * GitHub https://github.com/liangjingkanji/DrakeTyporaTheme
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #304455;
+    --bg-color: #ffffff;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #E5E5E596;
+    --active-file-bg-color: var(--item-hover-bg-color);
+
+    --blur-text-color: rgba(48, 68, 85, 0.5);
+    --drake-accent: #31a062;
+    --drake-highlight: #d63200;
+    --a-color: var(--drake-accent);
+    --variable-color: var(--drake-highlight);
+    --outline-active-color: var(--a-color);
+    --code-block-bg-color: #f8f8f8;
+    --code-block-color: #525252;
+    --title-color: #273849;
+    --blockquote-border-color: #f66;
+    --blockquote-color: var(--text-color);
+    --blockquote-bg-color: #f8f8f8;
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--drake-highlight);
+    --height-light-border-color: var(--drake-highlight);
+    --yaml-color: #777777;
+    --yaml-bg-color: #f7f7f7;
+    --footnotes-bg-color: #3c3d3e;
+    --footnotes-highlight: #FFD760;
+    --table-border-color: #dfe2e5;
+    --table-header-bg-color: #f8f8f8;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: #f8f8f8;
+    --input-bg-color: #f2f2f2;
+    --btn-hover-bg-color: #f2f2f2;
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23333333'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 0.5rem !important;
+    border-radius: 2px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: none;
+    line-height: var(--code-block-line-height);
+}
+
+/*mermaid*/
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color);
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 2px;
+    color: var(--drake-highlight);
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 4px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--blockquote-border-color);
+    border-radius: 2px;
+}
+
+blockquote {
+    color: var(--blockquote-color);
+    border-radius: 2px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+#write h2 a .md-plain {
+    border-bottom: .2rem solid var(--a-color);
+}
+.on-focus-mode #write a .md-plain, .on-focus-mode .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--blur-text-color);
+}
+#write a .md-plain, .md-htmlblock-container a:hover,
+.on-focus-mode #write .md-focus a .md-plain, .md-focus .md-htmlblock-container a:hover {
+    border-bottom: .1rem solid var(--a-color);
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+a:any-link {
+    color: var(--a-color);
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 .md-plain {
+    padding-bottom: .3rem;
+    border-bottom: .2rem solid var(--h2-underline-color);
+    line-height: 3rem;
+}
+
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    vertical-align: top;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 1rem;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 500;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/**
+    code render
+    Name: IntelliJ IDEA light theme
+    From IntelliJ IDEA by JetBrains
+ */
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-number {
+    color: #a32eff;
+}
+.cm-s-inner span.cm-atom {
+    color: #a32eff;
+}
+.cm-s-inner span.cm-def {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable-2 {
+    color: #00627A;
+}
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #00627A;
+}
+.cm-s-inner span.cm-property {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-keyword {
+    color: #d63200;
+}
+.cm-s-inner span.cm-operator {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-comment {
+    color: #787878;
+}
+.cm-s-inner span.cm-string {
+    color: #31a062;
+}
+.cm-s-inner span.cm-string-2 {
+    color: #31a062;
+}
+.cm-s-inner span.cm-qualifier {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-error {
+    color: red;
+}
+.cm-s-inner span.cm-attribute {
+    color: #2973b7;
+}
+.cm-s-inner span.cm-tag {
+    color: #2973b7;
+}
+.cm-s-inner span.cm-link {
+    color: #4A86E8;
+}
+.cm-s-inner span.cm-builtin {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-bracket {
+    color: #2973b7;
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: 1px solid rgba(120, 120, 120, 0.3);
+}
+.cm-s-inner .CodeMirror-linenumber {
+    color: #787878;
+}
+
+
+</style><title>交易经验汇编</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h3 id='交易经验汇编'><span>交易经验汇编</span></h3><h4 id='george-kleinman'><mark><span>George Kleinman</span></mark></h4><h4 id='技术分析纲要'><span>技术分析纲要</span></h4><hr /><ul><li><p><span>趋势线</span></p></li><li><p><span>轨道线</span></p></li><li><p><span>支撑阻力分析</span></p><ul><li><span>盘整后的突破</span></li><li><span>支撑阻力互变</span></li><li><span>假突破</span></li></ul></li><li><p><span>图表形态</span></p><ul><li><p><span>反转形态</span></p><ul><li><span>头肩形</span></li><li><span>双顶(底)</span></li><li><span>圆形顶(底)</span></li><li><span>关键反转日</span></li></ul></li><li><p><span>整理形态</span></p><ul><li><span>矩形</span></li><li><span>旗形</span></li><li><span>楔形</span></li></ul></li><li><p><span>两可形态</span></p><ul><li><p><span>三角形</span></p></li><li><p><span>跳空缺口</span></p><ul><li><span>大多数缺口会回补</span></li><li><span>底部突破缺口可在缺口底部设置买入止损</span></li><li><span>持续缺口是连续投机加仓良机</span></li><li><span>不要预测衰竭缺口,等回补后建仓　</span></li><li><span>出现重要跳空缺口要及时扣动扳机 　</span></li></ul></li></ul></li></ul></li><li><p><span>成交量</span></p><ul><li><span>上升趋势:价升量涨,价跌量缩</span></li><li><span>下跌趋势:价跌量涨,价升量缩</span></li><li><span>重要反转:成交量急剧放大</span></li></ul></li><li><p><span>波浪分析:上升5浪下跌3浪</span></p></li><li><p><span>技术指标</span></p><ul><li><span>RSI:背离</span></li><li><span>KDJ</span></li></ul></li><li><p><span>K线形态</span></p><ul><li><span>吞没线</span></li></ul></li><li><p><span>OX图</span></p></li><li><p><span>期货独有</span></p><ul><li><p><span>未平仓合约数(OI)</span></p><ul><li><span>上升趋势OI增加:看多</span></li><li><span>上升趋势OI减少:看空</span></li><li><span>下降趋势OI增加:看空</span></li><li><span>下降趋势OI减少:看多</span></li><li><span>盘整行情OI增加:看空</span></li><li><span>盘整行情OI减少:看多</span></li></ul></li><li><p><span>跨期价差</span></p><ul><li><span>多头价差(近月&gt;远月)看涨</span></li><li><span>空头价差(近月&lt;远月)看跌</span></li><li><span>价差反转:顺势而为</span></li></ul></li></ul></li></ul><h4 id='日线均线交易法'><span>日线均线交易法</span></h4><hr /><ol><li><span>趋势反转起始柱:日收盘第一次收于SMA(23)和SMA(30)上方(多头反转),或第一次收于SMA(23)和SMA(30)下方(空头反转)</span></li><li><span>多头反转起始柱高点被突破为买入信号,空头反转起始柱低点被突破为卖出信号</span></li><li><span>当市场进入加速趋势(剧烈波动和巨额成交)时采用10日均线止盈</span></li><li><span>分散到至少3个不相关的市场</span></li><li><span>等待盘整期后的突破</span></li></ol><h4 id='日内趋势反转交易系统'><span>日内趋势反转交易系统</span></h4><hr /><p><span>使用18分钟(可为15~45分钟)k线图,SMA(23),SMA(30)和RSI(9)</span></p><ol><li><span>识别趋势反转:当市场由低于两条平均线到高出两条均线时为多头反转,反之为空头反转</span></li><li><span>确定反转起始柱(以收盘为准)</span></li><li><span>当多头起始柱的高点被突破时产生买入信号,建立多头仓位并设置止损,空头类似</span></li><li><span>当RSI&lt;40时只采用买入信号,RSI&gt;60时只采用卖出信号</span></li><li><span>初始止损为反转信号,最大占到总资金4%</span></li><li><span>持多仓时当RSI&gt;75则将止损上移到前期高点,持空仓时当RSI&lt;25则将止损下移到前期低点</span></li><li><span>收盘时清仓</span></li></ol><h4 id='交易障碍'><span>交易障碍</span></h4><hr /><ol><li><span>为寻求刺激而交易</span></li><li><span>为寻求报复而交易</span></li><li><span>对资金缺乏管理</span></li><li><span>没有明确交易计划</span></li><li><span>不敢在关键时刻扣动扳机</span></li><li><span>不敢承认自己犯下的错误</span></li></ol><h4 id='交易之道'><span>交易之道</span></h4><hr /><ol><li><span>顺势而为</span></li><li><span>看重市场对价格的反应</span></li><li><span>最棒的交易往往最难</span></li><li><span>先订计划然后执行</span></li><li><span>大胆交易</span></li><li><span>不要后悔</span></li><li><span>资金管理是关键</span></li><li><span>专攻某一领域更易成功</span></li><li><span>有耐心就有回报</span></li><li><span>果断交易</span></li><li><span>报价机会诱使你上当</span></li><li><span>要报怀疑态度</span></li><li><span>对时间敏感</span></li><li><span>注意市场对新闻的反应</span></li><li><span>生病或疲倦时不要交易</span></li><li><span>勿过度交易</span></li><li><span>市场狂热时务必冷静</span></li><li><span>绝不让可观的利润变成亏损</span></li><li><span>市场拿不准时暂时退出</span></li><li><span>多样化分散风险</span></li><li><span>在正确的方向上连续投机累积利润(长期盘整有效突破后连续加仓,第一次修正可加仓)</span></li><li><span>注意盘整后的突破</span></li><li><span>进入相对较强的市场</span></li><li><span>停板是支撑与阻力的重要指标</span></li><li><span>绝不要向下摊平亏损</span></li></ol><h4 id='获取巨额利润的秘诀就是使大行情的利润最大化'><span>获取巨额利润的秘诀就是使大行情的利润最大化</span></h4><hr /><h3 id='动态市场理论'><mark><span>动态市场理论</span></mark></h3><ul><li><span>扩大投资范围</span></li><li><span>形成正确焦点</span></li><li><span>关注资金流向</span></li></ul><h4 id='市场周期分析'><span>市场周期分析</span></h4><hr /><ul><li><span>消费周期</span></li><li><span>农业周期</span></li><li><span>收入周期</span></li><li><span>财报周期</span></li></ul><h4 id='价值三连胜'><span>价值三连胜</span></h4><hr /><ul><li><span>技术信号分类总结</span></li><li><span>两阶段股利贴现</span></li><li><span>远期收益预测:小盘+低市盈率+高成长</span></li></ul><h4 id='紧随热钱'><span>紧随热钱</span></h4><hr /><p><span>成交量峰值反映内幕交易</span></p><h4 id='即时信息'><span>即时信息</span></h4><hr /><ul><li><p><span>消息扩散与市场反应</span></p><ul><li><span>内部人士提前介入</span></li><li><span>灵通人士尽快介入</span></li><li><span>市场对消息进行反应</span></li><li><span>市场对走势进行反应</span></li></ul></li></ul><h4 id='十字星交易'><span>十字星交易</span></h4><hr /><p><span>充分卖空股票下跌趋势出现十字星转势信号买入认购权证等待走势反转</span></p><h4 id='三向指标'><span>三向指标</span></h4><hr /><ul><li><span>SMA(20),SMA(35),SMA(50)</span></li><li><span>VIX</span></li></ul><h4 id='资金流向模型'><span>资金流向模型</span></h4><hr /><ul><li><span>OBV</span></li><li><span>A/D线</span></li><li><span>动量指标</span></li><li><span>成交量分析</span></li></ul><h4 id='波浪强度分析'><span>波浪强度分析</span></h4><hr /><ul><li><span>趋势</span></li><li><span>走势</span></li><li><span>动量</span></li></ul><h4 id='权证交易规则'><span>权证交易规则</span></h4><hr /><ul><li><span>设立交易计划</span></li><li><span>周一入周五出</span></li><li><span>分两批卖出</span></li><li><span>同时进行保守型和投机型交易</span></li><li><span>持有行业龙头认购和落后公司认沽</span></li><li><span>交易轻度价外权证最佳</span></li></ul><h4 id='从亏损到盈利马博'><mark><span>从亏损到盈利(马博)</span></mark></h4><ul><li><span>追涨杀跌,迅速止损,轻仓长线,试探加码</span></li></ul><h4 id='金融市场运行'><span>金融市场运行</span></h4><h5 id='市场是混沌的'><span>市场是混沌的</span></h5><hr /><ul><li><span>随机性为主导:非确定性-&gt;资金管理</span></li><li><span>存在长期记忆:趋势性-&gt;趋势跟踪</span></li><li><span>非周期循环</span></li><li><span>特征时间尺度为月(除外汇外)</span></li><li><span>大游程与小样本</span></li></ul><h5 id='行情框架理论'><span>行情框架理论</span></h5><hr /><ul><li><p><span>时间框架</span></p><ul><li><p><span>震荡整理(小箱体)</span></p><ul><li><span>是最常见行情</span></li></ul></li><li><p><span>鸡毛行情(震荡趋势)</span></p><ul><li><span>走势缺乏力度,频繁反抽</span></li><li><span>持续往往半年以上</span></li><li><span>是较为常见行情</span></li><li><span>阻力位作用明显</span></li><li><span>回调到趋势线处再介入</span></li></ul></li><li><p><span>中级行情</span></p><ul><li><span>持续8周左右</span></li><li><span>幅度20%~40%</span></li><li><span>频率为1~3波/年</span></li><li><span>适合追涨杀跌</span></li></ul></li><li><p><span>超级行情</span></p><ul><li><span>持续7</span><sub><span>8月到2</span></sub><span>3年</span></li><li><span>幅度1~3倍</span></li><li><span>频率为几年1波</span></li><li><span>适合耐心持仓或选强势品种回调介入</span></li></ul></li><li><p><span>广义多头/空头陷阱</span></p><ul><li><span>2B法则</span></li></ul></li><li><p><span>底部回升-&gt;中级上涨-&gt;顶部整理-&gt;鸡毛下跌-&gt;箱体震荡-&gt;下一波上涨</span></p></li></ul></li><li><p><span>空间框架</span></p><ul><li><p><span>外汇</span></p><ul><li><span>美加</span></li><li><span>欧洲</span></li><li><span>日本</span></li></ul></li><li><p><span>股票</span></p></li><li><p><span>期货</span></p><ul><li><p><span>指数</span></p><ul><li><span>美元指数</span></li><li><span>CRB指数</span></li><li><span>原油指数</span></li><li><span>黄金指数</span></li><li><span>道琼斯指数</span></li></ul></li><li><p><span>品种</span></p><ul><li><span>粮油</span></li><li><span>调味品:糖</span></li><li><span>棉花</span></li><li><span>林产品:天胶</span></li><li><span>金属</span></li><li><span>能源</span></li><li><span>股指</span></li><li><span>利率</span></li></ul></li><li><p><span>热门品种与冷门品种</span></p></li><li><p><span>资助行情与跟风行情</span></p></li><li><p><span>强者恒强弱者恒弱</span></p></li></ul></li></ul></li><li><p><span>股市经验</span></p><ul><li><span>趋势看周线:如连续涨跌2~3周很可能形成新趋势,连涨几天周线收大阳线也要试探介入</span></li><li><span>指数和个股要相互印证,战略看指数,战术选个股,抓龙头股</span></li><li><span>板块指数叠加看走势对比</span></li></ul></li></ul><h4 id='交易策略'><span>交易策略</span></h4><h5 id='性能评价指标'><span>性能评价指标</span></h5><hr /><ul><li><span>年复利率</span></li><li><span>算术期望收益</span></li><li><span>几何期望收益</span></li><li><span>最大回撤比例</span></li><li><span>悲观利润率:( (盈利次数-sqrt(盈利次数) )</span><em><span>平均单次盈利)/( (亏损次数-sqrt(亏损次数) )</span></em><span>平均单次亏损)</span></li><li><span>单位风险收益:算术期望/初始止损</span></li><li><span>月交易频率</span></li><li><span>胜率</span></li><li><span>总收益率</span></li><li><span>总损益</span></li><li><span>期初市值</span></li><li><span>期初市值</span></li><li><span>最大市值</span></li><li><span>最小市值</span></li><li><span>总盈利额</span></li><li><span>总亏损额</span></li><li><span>交易笔数</span></li><li><span>盈亏单笔平均</span></li><li><span>盈利笔数</span></li><li><span>亏损笔数</span></li><li><span>盈利单笔平均</span></li><li><span>亏损单笔平均</span></li><li><span>盈利单笔最大</span></li><li><span>亏损单笔最大</span></li><li><span>连续盈利最大笔数</span></li><li><span>连续亏损最大笔数</span></li><li><span>连续盈利最大金额</span></li><li><span>连续亏损最大金额</span></li><li><span>佣金</span></li><li><span>最高持仓比例</span></li></ul><h5 id='资金管理模式'><span>资金管理模式</span></h5><hr /><ul><li><span>每固定金额开1手仓</span></li><li><span>每固定金额交易一个不相关品种</span></li><li><span>每固定风险百分比交易一个不相关品种</span></li><li><span>每固定波动性(ATR)百分比交易一个不相关品种</span></li><li><span>Kelly公式:f((R+1)*P-1)/R,其中f为可用保证金比例,P为胜率,R为风险收益率</span></li><li><span>固定盈利百分比加1手仓</span></li><li><span>Larry公式:开仓手数账户余额*固定风险百分比/历史单手最大亏损</span></li><li><span>Ralph Vince:开仓手数账户余额*最优风险百分比/历史单手最大亏损,最优风险百分比fargmax (prd(1-f(PLi/BL)))^(1/n),n为交易次数,BL为带负号历史最大单手亏损,PLi为第i笔交易盈亏</span></li><li><span>试探加码法:菱形加仓.轻仓试盘,判断主升浪重仓,新增浮动利润再加仓,走势与预期不符迅速砍掉新增仓位</span></li></ul><h4 id='中短线临盘决策技法元小弟'><span>中短线临盘决策技法(</span><a href='http://qqyuan.blog.hexun.com/'><span>元小弟</span></a><span>)</span></h4><h5 id='过滤关注'><span>过滤关注</span></h5><hr /><ul><li><p><span>弱势中的强势股</span></p><ul><li><span>大盘下跌个股涨停</span></li></ul></li><li><p><span>转势形态</span></p><ul><li><span>收敛三角形</span></li><li><span>连续放量小阳线</span></li><li><span>周线上双底/三重底/圆弧底(1个月)</span></li><li><span>5日线,10日线,20日线粘连</span></li></ul></li><li><p><span>突破形态</span></p><ul><li><span>突破新高</span></li><li><span>突破平台</span></li></ul></li><li><p><span>突然放量</span></p><ul><li><span>长期震荡整理,突然放量上攻</span></li></ul></li><li><p><span>反常走势</span></p><ul><li><span>利好不涨</span></li><li><span>利空不跌</span></li><li><span>大盘连续上涨,个股横盘</span></li><li><span>大盘连续下跌,个股横盘或逆势上涨</span></li></ul></li><li><p><span>人为操纵走势痕迹</span></p><ul><li><span>突发利空+低位巨量换手</span></li><li><span>突然性窄幅波动,说明被控盘</span></li><li><span>稳定放量后突然大幅缩量且价格稳定　</span></li></ul></li><li><p><span>板块联动机会</span></p><ul><li><span>预告10送10但尚未公布除权登记日</span></li></ul></li></ul><h5 id='历史走势分析'><span>历史走势分析</span></h5><hr /><ul><li><span>波段规律</span></li><li><span>K线规律</span></li></ul><h4 id='走势信号'><span>走势信号</span></h4><h5 id='转势信号'><span>转势信号</span></h5><hr /><ul><li><span>倒红T形</span></li><li><span>红三兵</span></li><li><span>带较长下影线的快速拉升收阳线,往往是拉升前的最后一次打压</span></li><li><span>经过较长时间整理,突破之后继续调整,调整过后出现缩量阳线,即小于突破量,又小于调整量</span></li><li><span>出现强势特征:下跌缩量,底部抬高,收在高点</span></li></ul><h5 id='护盘信号'><span>护盘信号</span></h5><hr /><ul><li><span>关键位置不破</span></li></ul><h4 id='停板分析'><span>停板分析</span></h4><h5 id='涨停板分时特征'><span>涨停板分时特征</span></h5><hr /><ul><li><span>平开平走,拉高小调整,再次拉高再小调整,最后直接拉到涨停</span></li><li><span>小幅低开,快速放量拉升,封板</span></li><li><span>主力主动放弃拉涨停造成的封涨板失败后通常会小幅调整,调整后再次发力</span></li><li><span>第一个涨停板通常会打开一两次让胆小者出逃</span></li></ul><h5 id='涨停板后市特征'><span>涨停板后市特征</span></h5><hr /><ul><li><span>涨停次日收盘低于前日涨停价格表明进入调整概率大</span></li><li><span>第二天全天运行在涨停价格之上且收阳线为强势</span></li><li><span>涨停日如成交巨大说明跟风盘多第二日早盘往往洗盘</span></li><li><span>第三天通常会洗盘,尤其在早盘</span></li></ul><h5 id='操盘分析'><span>操盘分析</span></h5><hr /><ul><li><p><span>第一次突破后</span></p><ul><li><span>有效突破:直接上攻,高开高走</span></li><li><span>假突破真洗盘:小幅冲高后快速回落,调整洗盘</span></li><li><span>低开低走,套牢短线客</span></li></ul></li><li><p><span>突破后的上方空间</span></p><ul><li><span>次级突破</span></li><li><span>终极突破</span></li></ul></li><li><p><span>前期密集成交区宽幅震荡清洗</span></p></li><li><p><span>借利空吸货或洗盘一般会较快启动</span></p></li><li><p><span>通过成交量变化判断主力控盘程度</span></p></li><li><p><span>一般第二次突破才是有效突破,第三次突破则有效突破可能性非常大</span></p></li><li><p><span>吸筹手法</span></p><ul><li><span>试拉涨停</span></li><li><span>逆大势操作</span></li><li><span>缩量打压10%左右</span></li><li><span>借阻力位或成交密集区打压洗盘</span></li><li><span>挂大卖单并快速撤单让散户卖出</span></li><li><span>挂大买单让散户追高后打压股价</span></li><li><span>分时线上的压盘和托价</span></li><li><span>以阴线形式上涨</span></li></ul></li><li><p><span>连续放量20%以上往往是短期行情</span></p></li></ul><h5 id='买点分析'><span>买点分析</span></h5><hr /><ul><li><p><span>激进买点</span></p><ul><li><span>出现转势信号后分时放量快速上拉,有望封板或突破前期平台</span></li><li><span>盘中第三波拉升后介入以避免踏空</span></li></ul></li><li><p><span>稳健买点</span></p><ul><li><span>启动后回调到启动日最低价附近</span></li><li><span>跌破均线后拉起或在22日均线附近受支撑</span></li></ul></li><li><p><span>最佳买点</span></p><ul><li><span>二次启动的第一时间,出现连续大单</span></li><li><span>量价配合,在形态上出现有效突破</span></li><li><span>缩量阳线之类明确转势信号</span></li><li><span>有效突破后的放量拉升要敢于加仓</span></li><li><span>放量跳空高开在第一时间加仓</span></li><li><span>分时三重底形成有效突破</span></li></ul></li></ul><h5 id='卖点分析'><span>卖点分析</span></h5><hr /><ul><li><p><span>各档目标位估计:涨幅0.5,0.618,1</span></p><ul><li><span>从波段低点估计</span></li><li><span>从启动位置估计</span></li><li><span>上涨幅度与上涨速度成反比</span></li><li><span>下跌速度与上涨速度成正比</span></li></ul></li><li><p><span>主力出货或开始调整信号</span></p><ul><li><span>短期暴涨通常会很快调整</span></li><li><span>高位放巨量(15%+)可能为出货</span></li><li><span>多次封板不能有效封住且放巨量</span></li><li><span>短线连续上涨(30%+)出现高位放量,冲高回落,无法封住涨停</span></li><li><span>分时出现冲高回落,再冲高再回落,冲高无法创新高,回落跌破分时均线</span></li><li><span>早盘开盘10分钟以内就不断拉高,拉不到涨停就回落,拉升和回落都持续放量,调整到一定位置后再次向上但量能不能放大,不能冲到第一次高点</span></li></ul></li><li><p><span>走势出现转折</span></p><ul><li><span>主要均线开始下行</span></li></ul></li></ul><h4 id='熊市选股'><span>熊市选股</span></h4><h5 id='超跌反弹'><span>超跌反弹</span></h5><hr /><ul><li><span>曾经的强势板块强势个股</span></li><li><span>有良好炒作题材和消息面配合</span></li><li><span>短时间内快速下跌,跌幅超过60%</span></li><li><span>下跌过程以无量下跌为主</span></li><li><span>第一个反弹涨停板时上涨速度极快,通常开盘一小时牢牢封住涨停,中间不会打开</span></li><li><span>上涨初期通常会以跳空高开方式连拉两个涨停</span></li></ul><h5 id='弱势中的强势股'><span>弱势中的强势股</span></h5><hr /><ul><li><span>大盘创新低个股不创新低</span></li><li><span>最低点与大盘最低点不同步</span></li><li><span>大盘大跌时它不跌或小跌,大盘涨时它大张</span></li><li><span>正式启动上涨前通常出现连续小阳线</span></li><li><span>有题材配合</span></li><li><span>同一题材个股板块性联动</span></li></ul><h3 id='解读量化投资西蒙斯的故事'><mark><span>解读量化投资(西蒙斯的故事)</span></mark></h3><h5 id='ch3'><span>Ch3</span></h5><ul><li><span>策略以短线为主</span></li><li><span>使用tick数据库和Level-2数据</span></li><li><span>数学不深,统计复杂</span></li><li><span>语音识别方法:统计信息论/最大熵/隐马尔可夫模型</span></li><li><span>多模型/多版本</span></li><li><span>注重流动性</span></li></ul><h5 id='ch5'><span>Ch5</span></h5><ol><li><span>通过统计信息分析方法判断外汇和债券短期价格变化,尤其关注过激反应的一类</span></li><li><span>加入风险控制模型</span></li><li><span>引入统计套利,高速交易大量股票</span></li><li><span>引入统计套利变种,低速交易大量股票</span></li><li><span>引入其它模型和数据源</span></li></ol></div></div>
+</body>
+</html>
